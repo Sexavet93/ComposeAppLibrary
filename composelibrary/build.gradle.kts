@@ -58,7 +58,7 @@ publishing {
 
             credentials {
                 username = (project.findProperty("gpr.user") ?: "").toString()
-                password = "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"
+                password = (project.findProperty("gpr.key") ?: "").toString()
             }
         }
     }
