@@ -11,7 +11,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -58,7 +58,7 @@ publishing {
 
             credentials {
                 username = (project.findProperty("gpr.user") ?: "").toString()
-                password = (project.findProperty("gpr.key") ?: "").toString()
+                password = "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"
             }
         }
     }
